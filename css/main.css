@@ -136,11 +136,72 @@ body {
 }
 
 .header {
+    padding-top: 32px;
     background-color: #00eaee;
     background-image: url(../img/snowflakes.svg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 0;
+    }
+}
+
+.header-weather {
+    margin: 0 auto;
+    width: 150px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+    .header-weather {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+}
+
+.header-weather_half {
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header-weather_current {
+    border-right: 1px solid #000;
+}
+
+.header-weather_icon {
+    border-left: 1px solid #000;
+}
+
+.header-weather_icon > img {
+    position: relative;
+    top: 8px;
+    height: 32px;
+}
+
+.header-weather_current-temperature {
+    font-size: 2em;
+}
+
+.header-weather_water {
+    background: #000;
+    color: #00eaee;
+    text-align: center;
+    font-size: 8px;
+    padding: 6px 0;
+    border-radius: 0 0 7px 7px;
 }
 
 .header_image {
@@ -157,7 +218,7 @@ body {
 }
 
 .header_logos {
-    padding: 64px 0 32px;
+    padding: 32px 0;
     max-width: calc(100% - 64px);
 }
 
