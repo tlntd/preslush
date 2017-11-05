@@ -157,11 +157,19 @@ body {
 }
 
 .header_logos {
-    padding: 130px 0 50px;
+    padding: 64px 0 32px;
+    max-width: calc(100% - 64px);
+}
+
+@media screen and (min-width: 768px) {
+    .header_logos {
+        padding: 120px 0 64px;
+    }
 }
 
 .header_title {
-    padding: 0 0 50px;
+    padding: 0 0 48px;
+    max-width: calc(100% - 32px);
 }
 
 .separator {
@@ -173,14 +181,21 @@ body {
 
 .info {
     max-width: 680px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
 .info > h1 {
-    margin: 80px 0 40px;
+    margin: 32px 0 16px;
     text-align: center;
     font-size: 1.7em;
     font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .info > h1 {
+        margin: 80px 0 40px;
+    }
 }
 
 .info_code {
