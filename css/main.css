@@ -118,16 +118,83 @@ textarea {
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #1ecfe6;
+    color: #000;
     font-family: Suisse, sans-serif;
     font-size: 16px;
     letter-spacing: 1.5px;
     line-height: 1.5;
+    padding-bottom: 80px;
 }
 
+.yellow-text {
+    color: #F6E300;
+}
 
+.red-text {
+    color: #FF0000;
+}
 
+.header {
+    background-color: #00eaee;
+    background-image: url(../img/snowflakes.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.header_image {
+    display: block;
+    margin: 0 auto;
+}
+
+.header_iceberg {
+    position: absolute;
+    bottom: -145px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.header_logos {
+    padding: 130px 0 50px;
+}
+
+.header_title {
+    padding: 0 0 50px;
+}
+
+.separator {
+    height: 10px;
+    margin: 0;
+    border: 0;
+    background-color: #7CEAFF;
+}
+
+.info {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.info > h1 {
+    margin: 80px 0 40px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.info_code {
+    height: 120px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 30px;
+    font-size: 0;
+    margin: 40px 0;
+}
+
+.info_image {
+    max-width: 100%;
+}
 
 
 
