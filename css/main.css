@@ -255,8 +255,28 @@ body {
 
 @media screen and (min-width: 768px) {
     .info > h1 {
-        margin: 80px 0 40px;
+        margin: 80px 0 24px;
     }
+}
+
+.tickets-button {
+    text-align: center;
+}
+
+.tickets-button_link {
+    border: 1px solid #F6E300;
+    border-radius: 4px;
+    color: #F6E300;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    margin: 16px auto;
+}
+
+.tickets-button_link:hover {
+    border: 1px solid #f7ec6e;
+    color: #f7ec6e;
 }
 
 .info_code {
@@ -265,10 +285,11 @@ body {
     background-color: #000;
     border-radius: 30px;
     font-size: 0;
-    margin: 40px 0;
+    margin: 40px 0 24px;
 }
 
 .info_image {
+    margin-top: 24px;
     max-width: 100%;
 }
 
