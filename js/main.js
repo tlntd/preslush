@@ -20,3 +20,24 @@
         }
     }
 }());
+
+function kelvinToCelsius (temp) {
+    var zeroCelsiusInKelvin = 273.15;
+    var tempInCelsius = parseInt(temp - zeroCelsiusInKelvin, 10);
+    return tempInCelsius < 0 ? tempInCelsius : '+' + tempInCelsius;
+}
+
+function setWeather (data) {
+    var temperature = kelvinToCelsius(data.main.temp);
+    var description = (data.weather[0] && data.weather[0].main) || 'Snowing';
+    $('#header-weather_current-temperature').text(temperature);
+    $('#header-weather_current-status').text(description);
+}
+
+$(function () {
+   var API_KEY = 'ee2053684c5ec49069115510aeb5d883';
+   var CITY_ID = 658226;
+   var API_URL = 'https://api.openweathermap.org/data/2.5/weather?id=' + CITY_ID + '&appid=' + API_KEY;
+
+   $.get(API_URL).done(setWeather).error(console.error);
+});
