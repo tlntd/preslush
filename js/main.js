@@ -39,5 +39,5 @@ $(function () {
    var CITY_ID = 658226;
    var API_URL = 'https://api.openweathermap.org/data/2.5/weather?id=' + CITY_ID + '&appid=' + API_KEY;
 
-   $.get(API_URL).done(setWeather).error(console.error);
+   $.get(API_URL).done(setWeather).fail(console.error);
 });
