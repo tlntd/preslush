@@ -136,6 +136,8 @@ body {
 }
 
 .header {
+    position: relative;
+    height: 440px;
     padding-top: 32px;
     background-color: #00eaee;
     background-image: url(../img/snowflakes.svg);
@@ -144,8 +146,16 @@ body {
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 480px) {
+    .header {
+        height: 580px;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
     .header {
+        height: auto;
         padding-top: 0;
     }
 }
@@ -211,10 +221,26 @@ body {
 
 .header_iceberg {
     position: absolute;
-    bottom: -145px;
+    bottom: -275px;
     left: 0;
     right: 0;
+    width: 290px;
     margin: 0 auto;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 480px) {
+    .header_iceberg {
+        bottom: -380px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header_iceberg {
+        bottom: -615px;
+        width: auto;
+    }
 }
 
 .header_logos {
@@ -229,11 +255,14 @@ body {
 }
 
 .header_title {
-    padding: 0 0 48px;
+    position: relative;
+    width: 660px;
     max-width: calc(100% - 32px);
+    padding: 0 0 48px;
 }
 
 .separator {
+    position: relative;
     height: 10px;
     margin: 0;
     border: 0;
@@ -241,6 +270,7 @@ body {
 }
 
 .info {
+    position: relative;
     max-width: 680px;
     padding: 0 16px;
     margin: 0 auto;
