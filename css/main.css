@@ -262,6 +262,17 @@ body {
     padding: 0 0 48px;
 }
 
+.header_mluto {
+    position: absolute;
+    bottom: -45px;
+}
+
+@media screen and (min-width: 768px) {
+    .header_mluto {
+        left: 40px;
+    }
+}
+
 .separator {
     position: relative;
     height: 10px;
