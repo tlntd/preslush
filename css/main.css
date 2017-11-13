@@ -301,6 +301,18 @@ body {
     }
 }
 
+.schedule th {
+    text-align: left;
+}
+
+.schedule td {
+    padding: 0;
+}
+
+.schedule td:last-child {
+    padding-left: 10px;
+}
+
 .tickets-button {
     text-align: center;
 }
